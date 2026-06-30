@@ -3,157 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>USR Dance Studio</title>
-
+<title>USR Dance Studio | Horarios</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-background:#0b0b0b;
-color:white;
+font-family:Arial,Helvetica,sans-serif;
+background:#090909;
+color:#fff;
 padding:40px 20px;
 }
-
-h1{
-text-align:center;
-font-size:50px;
-margin-bottom:10px;
-}
-
-.subtitulo{
-text-align:center;
-color:#bdbdbd;
-margin-bottom:50px;
-}
-
-.contenedor{
-max-width:1100px;
-margin:auto;
+.container{max-width:1100px;margin:auto}
+h1{font-size:56px;text-align:center;margin-bottom:10px}
+p.sub{color:#bbb;text-align:center;margin-bottom:40px}
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
 }
-
-.tarjeta{
-
+.card{
 background:#151515;
-
-border:1px solid #2e2e2e;
-
-border-radius:20px;
-
-padding:30px;
-
-transition:.3s;
+border:1px solid #333;
+border-radius:22px;
+padding:28px;
+transition:.25s;
+box-shadow:0 8px 30px rgba(0,0,0,.35);
 }
-
-.tarjeta:hover{
-
-transform:translateY(-8px);
-
-border-color:white;
-
-}
-
-h2{
-
-margin-bottom:15px;
-
-font-size:30px;
-
-}
-
-p{
-
-margin:10px 0;
-
-color:#d6d6d6;
-
-}
-
-.boton{
-
+.card:hover{transform:translateY(-6px);border-color:#888}
+.day{font-size:30px;font-weight:bold;margin-bottom:18px}
+.info{color:#d5d5d5;line-height:1.8}
+.btn{
 display:block;
-
-margin-top:25px;
-
-background:white;
-
-color:black;
-
+margin-top:24px;
 text-align:center;
-
+background:#fff;
+color:#000;
 padding:15px;
-
 border-radius:12px;
-
-text-decoration:none;
-
 font-weight:bold;
-
+text-decoration:none;
 }
-
-.boton:hover{
-
-background:#d9d9d9;
-
+footer{
+margin-top:60px;
+text-align:center;
+color:#888;
+font-size:14px;
 }
-
 </style>
-
 </head>
-
 <body>
-
+<div class="container">
 <h1>HORARIOS</h1>
+<p class="sub">Selecciona tu clase y reserva por WhatsApp</p>
 
-<p class="subtitulo">Selecciona tu clase y reserva por WhatsApp</p>
+<div class="grid">
 
-<div class="contenedor">
+<div class="card">
+<div class="day">JUEVES</div>
+<div class="info">
+🕔 5:00 PM - 6:30 PM<br>
+Adolescentes y Adultos
+</div>
+<a class="btn" target="_blank"
+href="https://wa.me/50686243479?text=Hola,%20quiero%20reservar%20la%20clase%20del%20jueves%20de%205:00%20PM%20a%206:30%20PM.">
+RESERVAR
+</a>
+</div>
 
-<div class="tarjeta">
+<div class="card">
+<div class="day">JUEVES</div>
+<div class="info">
+🕕 6:00 PM - 7:00 PM<br>
+Niños (6 a 12 años)
+</div>
+<a class="btn" target="_blank"
+href="https://wa.me/50686243479?text=Hola,%20quiero%20reservar%20la%20clase%20de%20niños%20del%20jueves%20de%206:00%20PM%20a%207:00%20PM.">
+RESERVAR
+</a>
+</div>
 
-<h2>JUEVES</h2>
-
-<p>🕔 5:00 PM - 6:30 PM</p>
-
-<p>Adolescentes y Adultos</p>
-
-<a class="boton" href="#">RESERVAR</a>
+<div class="card">
+<div class="day">VIERNES</div>
+<div class="info">
+🕔 5:00 PM - 6:30 PM<br>
+Adolescentes y Adultos
+</div>
+<a class="btn" target="_blank"
+href="https://wa.me/50686243479?text=Hola,%20quiero%20reservar%20la%20clase%20del%20viernes%20de%205:00%20PM%20a%206:30%20PM.">
+RESERVAR
+</a>
+</div>
 
 </div>
 
-<div class="tarjeta">
-
-<h2>JUEVES</h2>
-
-<p>🕕 6:00 PM - 7:00 PM</p>
-
-<p>Niños (6 a 12 años)</p>
-
-<a class="boton" href="#">RESERVAR</a>
-
+<footer>USR Dance Studio © 2026</footer>
 </div>
-
-<div class="tarjeta">
-
-<h2>VIERNES</h2>
-
-<p>🕔 5:00 PM - 6:30 PM</p>
-
-<p>Adolescentes y Adultos</p>
-
-<a class="boton" href="#">RESERVAR</a>
-
-</div>
-
-</div>
-
 </body>
 </html>
